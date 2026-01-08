@@ -1,0 +1,6 @@
+[tools]
+age = "latest"
+cloudflared = "latest"
+gh = "latest"
+kubens = "latest"
+sops = "latest"
