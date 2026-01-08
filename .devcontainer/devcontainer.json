@@ -1,0 +1,16 @@
+{
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "scripts/setup",
+  "forwardPorts": [
+  "8000"
+
+  ],
+    "remoteEnv": {
+    "LANG": "en_US.UTF-8"
+  }
+}
+
+
