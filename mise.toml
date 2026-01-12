@@ -2,5 +2,7 @@
 age = "latest"
 cloudflared = "latest"
 gh = "latest"
+helm = "latest"
 kubens = "latest"
 sops = "latest"
+tmux = "latest"
