@@ -25,8 +25,8 @@ spec:
         - envFrom:
             - configMapRef:
                 name: n8n-configmap
-            - secretRef:
-                name: n8n-container-env
+            # - secretRef:
+            #     name: n8n-container-env
           image: docker.n8n.io/n8nio/n8n:1.123.0
           livenessProbe:
             failureThreshold: 3
