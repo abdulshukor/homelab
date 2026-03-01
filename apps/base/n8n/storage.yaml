@@ -5,7 +5,8 @@ metadata:
   namespace: n8n
 spec:
   accessModes:
-    - ReadWriteMany
+    # - ReadWriteMany not supported by local storage class.
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
