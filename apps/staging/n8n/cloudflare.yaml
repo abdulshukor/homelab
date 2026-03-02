@@ -77,9 +77,9 @@ data:
 
     ingress:
     - hostname: n8n.abdulshukor.org
-      service: http://n8n:3005
+      service: http://n8n:3008
 
-    # service: http://n8n:3005 - refering to service.yaml file. 
+    # service: http://n8n:3008 - refering to service.yaml file. 
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
     # in the connection from cloudflared to your local service, not from the internet to cloudflared.
