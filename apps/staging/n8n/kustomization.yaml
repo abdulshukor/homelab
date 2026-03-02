@@ -6,6 +6,6 @@ resources:
   # Set namespace at this level
   - ../../base/n8n/
   # - cloudflare.yaml
-  # - cloudflare-secret.yaml
+  - cloudflare-n8n-secret.yaml
   # - linkding-container-env-secret.yaml
   - ingress.yaml
