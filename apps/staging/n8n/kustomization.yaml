@@ -5,7 +5,7 @@ resources:
   # All resources loaded through this kustomizion file and will all loaded in namespace n8n
   # Set namespace at this level
   - ../../base/n8n/
-  - cloudflare.yaml
-  - cloudflare-n8n-secret.yaml
+  # - cloudflare.yaml
+  #- cloudflare-n8n-secret.yaml
   # - linkding-container-env-secret.yaml
-  - ingress.yaml
+  # - ingress.yaml
