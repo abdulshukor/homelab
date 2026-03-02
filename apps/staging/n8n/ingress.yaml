@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: n8n.abdulshukor.org
+    - host: n8n-ingress.abdulshukor.org
       http:
         paths:
           - backend:
