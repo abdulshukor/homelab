@@ -8,7 +8,9 @@ spec:
   chart:
     spec:
       chart: kube-prometheus-stack
-      version: "76.4.0"
+      # version: "76.4.0"
+      version:
+        "76.x"
 
         # version: "58.x"
 
@@ -31,13 +33,12 @@ spec:
   values:
     grafana:
       adminPassword: abdul
-      ingress:                                                                                                        
+      ingress:
         enabled: true
         ingressClassName: traefik
         hosts:
-           - grs.abdulshukor.org
+          - grs.abdulshukor.org
         tls:
-         - secretName: grafana-tls-secret
-           hosts:
-           - grs.abdulshukor.org
-
+          - secretName: grafana-tls-secret
+            hosts:
+              - grs.abdulshukor.org
