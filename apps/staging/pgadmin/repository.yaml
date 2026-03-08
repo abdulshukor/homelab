@@ -19,8 +19,8 @@ spec:
       env:
         email: abdul@abdulshulor.org
 
-        existingSecret: pgadmin-secret
-        secretKeys:
+      existingSecret: pgadmin-secret
+      secretKeys:
         pgadminPasswordKey: password
 
     service:
