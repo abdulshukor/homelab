@@ -8,17 +8,20 @@ spec:
   chart:
     spec:
       chart: pgadmin4
-      version: "1.59.0"
+      version: "1.x"
       sourceRef:
         kind: HelmRepository
         name: runix
         namespace: pgadmin
       interval: 10m
 
-    # values:
-    #   env:
-    #     email:
-    #     password:
+    values:
+      env:
+        email: abdul@abdulshulor.org
+
+        existingSecret: pgadmin-secret
+        secretKeys:
+        pgadminPasswordKey: password
 
     service:
       type: ClusterIP
