@@ -23,26 +23,26 @@ spec:
       secretKeys:
         pgadminPasswordKey: password
 
-    service:
-      type: ClusterIP
-      port: 80
+      service:
+        type: ClusterIP
+        port: 80
 
-    ingress:
-      enabled: true
-      ingressClassName: traefik
-      hosts:
-        - host: pgadmin.abdulshukor.org
-          paths:
-            - path: /
-              pathType: Prefix
-      tls:
-        - secretName: pgadmin-tls
-          hosts:
-            - pgadmin.abdulshukor.org
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        hosts:
+          - host: pgadmin.abdulshukor.org
+            paths:
+              - path: /
+                pathType: Prefix
+        tls:
+          - secretName: pgadmin-tls
+            hosts:
+              - pgadmin.abdulshukor.org
 
-    persistence:
-      enabled: true
-      size: 10Gi
+      persistence:
+        enabled: true
+        size: 10Gi
 
-    strategy:
-      type: Recreate
+      strategy:
+        type: Recreate
