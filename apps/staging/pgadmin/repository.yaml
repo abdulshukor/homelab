@@ -1,0 +1,45 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: pgadmin
+  namespace: pgadmin
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: pgadmin4
+      version: "1.59.0"
+      sourceRef:
+        kind: HelmRepository
+        name: runix
+        namespace: pgadmin
+      interval: 10m
+
+  values:
+    env:
+      email: admin@example.com
+      password: ChangeMe123!
+
+    service:
+      type: ClusterIP
+      port: 80
+
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: pgadmin.example.com
+          paths:
+            - path: /
+              pathType: Prefix
+      tls:
+        - secretName: pgadmin-tls
+          hosts:
+            - pgadmin.example.com
+
+    persistence:
+      enabled: true
+      size: 10Gi
+
+    strategy:
+      type: Recreate
