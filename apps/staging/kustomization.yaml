@@ -4,4 +4,4 @@ resources:
   - linkding
   - audiobookshelf
   - n8n
-  - pgadmin
+  # - pgadmin

@@ -15,10 +15,10 @@ spec:
         namespace: pgadmin
       interval: 10m
 
-  values:
-    env:
-      email: admin@example.com
-      password: ChangeMe123!
+    # values:
+    #   env:
+    #     email:
+    #     password:
 
     service:
       type: ClusterIP
