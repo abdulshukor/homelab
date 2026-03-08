@@ -28,14 +28,14 @@ spec:
       enabled: true
       ingressClassName: traefik
       hosts:
-        - host: pgadmin.example.com
+        - host: pgadmin.abdul.com
           paths:
             - path: /
               pathType: Prefix
       tls:
         - secretName: pgadmin-tls
           hosts:
-            - pgadmin.example.com
+            - pgadmin.abdul.com
 
     persistence:
       enabled: true
