@@ -26,7 +26,7 @@ spec:
 
     ingress:
       enabled: true
-      ingressClassName: nginx
+      ingressClassName: traefik
       hosts:
         - host: pgadmin.example.com
           paths:
