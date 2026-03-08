@@ -8,3 +8,4 @@ resources:
   - repository.yaml
   - release.yaml
   - pgadmin-secret.yaml
+  - pgadmin-tls-secret.yaml
