@@ -22,7 +22,8 @@ spec:
     existingSecret: pgadmin-secret
     secretKeys:
       pgadminPasswordKey: password
-
+    # image:
+    #   tag: "9.13"
     service:
       type: ClusterIP
       port: 80
