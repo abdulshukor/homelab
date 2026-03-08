@@ -17,8 +17,8 @@ spec:
 
   values:
     env:
-      email: abdul@abdulshulor.org
-
+      email: "abdul@abdulshukor.org"
+      # PGADMIN_DEFAULT_EMAIL: "abdul@abdulshukor.org"
     existingSecret: pgadmin-secret
     secretKeys:
       pgadminPasswordKey: password
